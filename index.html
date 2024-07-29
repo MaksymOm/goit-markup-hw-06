@@ -23,7 +23,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a href="./index.html" class="header-link-logo"
+          <a href="./index.html" class="logo header-logo"
             >Web<span class="header-link-w">Studio</span></a
           >
           <ul class="header-menu">
@@ -52,6 +52,81 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="mobile-btn-icon" width="8" heigth="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-list">
+              <li class="mobile-list-item">
+                <a href="./index.html" class="mobile-navi-link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-list-item">
+                <a href="" class="mobile-navi-link">Portfolio</a>
+              </li>
+              <li class="mobile-list-item">
+                <a href="" class="mobile-navi-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mobile-address-list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-address-link current"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="mobile-address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <ul class="mobile-icon-list-social">
+                <li class="icon-item">
+                  <a href="" class="icon-link">
+                    <svg class="icon-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-item">
+                  <a href="" class="icon-link">
+                    <svg class="icon-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-item">
+                  <a href="" class="icon-link">
+                    <svg class="icon-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-item">
+                  <a href="" class="icon-link">
+                    <svg class="icon-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -65,9 +140,9 @@
       <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
-          <ul class="benefits-ul">
-            <li class="benefits-li">
-              <div class="benefits-img-d">
+          <ul class="benefits-list">
+            <li class="benefits-list-item">
+              <div class="benefits-icon-b">
                 <svg class="benefits-svg" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
@@ -78,8 +153,8 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="benefits-li">
-              <div class="benefits-img-d">
+            <li class="benefits-list-item">
+              <div class="benefits-icon-b">
                 <svg class="benefits-svg" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -90,8 +165,8 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="benefits-li">
-              <div class="benefits-img-d">
+            <li class="benefits-list-item">
+              <div class="benefits-icon-b">
                 <svg class="benefits-svg" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
@@ -102,8 +177,8 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="benefits-li">
-              <div class="benefits-img-d">
+            <li class="benefits-list-item">
+              <div class="benefits-icon-b">
                 <svg class="benefits-svg" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
@@ -431,7 +506,7 @@
           </p>
         </div>
         <div class="footer-soc">
-          <p class="footer-soc-p">Social media</p>
+          <p class="footer-soc-title">Social media</p>
           <ul class="icon-list-foot">
             <li class="icon-item">
               <a href="" class="icon-link-foot">
