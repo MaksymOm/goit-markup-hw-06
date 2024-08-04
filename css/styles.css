@@ -1469,6 +1469,11 @@ img {
     padding: 0 15px 0 15px;
     margin: 0 auto;
   }
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  }
   .header-logo {
     margin-right: 72px;
   }
@@ -1477,11 +1482,18 @@ img {
     flex-direction: row;
     align-items: center;
     gap: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
   .header-address {
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
 
