@@ -199,7 +199,6 @@ img {
   .header-address {
     color: #4d5ae5;
     font-style: normal;
-
     display: block;
   }
   .header-address-link {
@@ -278,6 +277,15 @@ img {
 
 .mobile-navi-link.current {
   color: #404bbf;
+}
+
+.mobile-address {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .mobile-address-list {
@@ -572,10 +580,23 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  padding: auto;
+  padding: 72px 52px;
+  margin: top 0;
   margin: auto;
   height: 432px;
   width: 320px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-mobile-2x.jpg');
+  }
 }
 
 .hero-title {
@@ -588,7 +609,7 @@ img {
   color: #fff;
   max-width: 216px;
   margin: auto;
-  padding-top: 72px;
+
   padding-bottom: 72px;
 }
 
@@ -662,7 +683,7 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .our-team-list {
@@ -701,11 +722,10 @@ img {
 }
 
 .icon-list {
-  margin-top: 8px;
   justify-content: center;
   display: flex;
   gap: 24px;
-  margin-bottom: 32px;
+  margin: 8px 16px 32px;
 }
 
 .icon-item {
@@ -732,6 +752,23 @@ img {
   margin-bottom: 72px;
 }
 
+.portfolio-title-app {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.benefits-txt-our {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 .portfolio-ul {
   display: flex;
   flex-direction: column;
@@ -749,24 +786,6 @@ img {
 .overlay-p {
   display: none;
 }
-.benefits-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-align: left;
-}
-
-.benefits-txt {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
 
 .app {
   padding: 32px 16px;
@@ -780,6 +799,8 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 96px 16px;
+  display: flex;
+  gap: 72px;
 }
 
 .logo-footer {
@@ -818,6 +839,10 @@ img {
   box-sizing: border-box;
 }
 
+.footer-soc {
+  margin-top: 72px;
+}
+
 .footer-soc-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -825,7 +850,7 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-top: 72px;
+  /*padding-top: 72px;*/
   padding-bottom: 16px;
   text-align: center;
 }
@@ -851,6 +876,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 72px;
 }
 
 .sub-title {
@@ -862,7 +888,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-top: 72px;
 }
 
 .modal-sub {
@@ -877,7 +902,7 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  padding-left: 16px;
+  padding: 0 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-bottom: 16px;
@@ -966,6 +991,18 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/hero-tablet.jpg');
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/hero-tablet-2x.jpg');
+    }
   }
 
   .hero-title {
@@ -1466,6 +1503,19 @@ img {
     width: 100%;
     margin: auto;
   }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/hero-2x.jpg');
+    }
+  }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -1691,7 +1741,10 @@ img {
 
   .footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    margin: auto 0;
+    padding-top: 0;
+
+    /*padding: 100px 0;*/
   }
 
   .header-link-s {
@@ -1718,7 +1771,7 @@ img {
   .box-footer {
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 100px 15px 100px;
     display: flex;
     align-items: baseline;
   }
